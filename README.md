@@ -8,17 +8,17 @@ Installation
 
 Add the following line into your gemfile:
 
-  gem install geocoder
+    gem install geocoder
 
 and run command
 
-  bundle install
+    bundle install
 
 Generate migration
 
-  rails generate geoip
-  rake db:migrate
-  rake ip_to_country:populate
+    rails generate geoip
+    rake db:migrate
+    rake ip_to_country:populate
 
 Geoip model
 ------------
