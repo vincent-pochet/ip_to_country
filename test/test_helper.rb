@@ -8,10 +8,6 @@ require "simplecov"
 require 'coveralls'
 require "mocha/setup"
 
-SimpleCov.start do
-  add_filter "/test/*"
-end
-
 Coveralls.wear!
 
 Rails.backtrace_cleaner.remove_silencers!
