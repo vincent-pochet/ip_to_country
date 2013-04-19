@@ -3,14 +3,14 @@ require 'test_helper'
 
 class LoaderTest < ActiveSupport::TestCase
   
-  test "ip populate workflow" do
+  def test_populate!
     IpToCountry::Loader.expects(download_and_unzip_ips: true, create_tempo_table: true, 
       load_csv_in_tempo_table: true, rename_tempo_into_geoip: true, 
       clean_tmp_files: true)
     assert(IpToCountry::Loader.populate!)
   end
 
-  test "it download and unzip csv with ip address" do
+  def test_download_and_unzip_ips
     setup_download_and_extract
     
     IpToCountry::Loader.expects(:system).with("wget -N #{IpToCountry::Loader::ARCHIVE_SOURCE}")
@@ -21,12 +21,12 @@ class LoaderTest < ActiveSupport::TestCase
     teardown_download_and_extract
   end
 
-  test "it creates a tempo table for ips" do
+  def test_create_tempo_table
     assert(IpToCountry::Loader.create_tempo_table)
     assert ActiveRecord::Base.connection.table_exists?('geoips_tempo')
   end
 
-  test "it loads csv ips into tempo table" do
+  def test_load_csv_in_tempo_table
     setup_load_csv
     IpToCountry::Loader.create_tempo_table
     IpToCountry::Loader.load_csv_in_tempo_table
@@ -35,19 +35,17 @@ class LoaderTest < ActiveSupport::TestCase
     teardown_load_csv
   end
 
-  test "it renames tempo table into geoips" do
+  def test_rename_tempo_into_geoip
     IpToCountry::Loader.create_tempo_table
     IpToCountry::Loader.rename_tempo_into_geoip
     refute ActiveRecord::Base.connection.table_exists?('geoips_tempo')
   end
 
-  test "it remove temp files" do
+  def test_clean_tmp_files
     setup_file_remove
-    
     IpToCountry::Loader.clean_tmp_files
     refute File.exists?('/tmp/test_ips.csv')
     refute File.exists?('/tmp/test_ips.zip')
-    
     teardown_file_remove
   end
 
