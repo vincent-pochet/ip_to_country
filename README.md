@@ -2,3 +2,15 @@ IpToCountry [![Build Status](https://travis-ci.org/vincent-pochet/ip_to_country.
 =====
 
 Description and documentation comming soon
+
+Development
+-----------
+
+### Author
+
+[Vincent Pochet](https://github.com/vincent-pochet) ([@vin100pochet](https://twitter.com/vin100pochet))
+
+GeoLite Data
+-----------
+
+This product includes GeoLite data created by MaxMind, available from (http://www.maxmind.com).
