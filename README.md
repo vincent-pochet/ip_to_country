@@ -6,7 +6,7 @@ Description and documentation comming soon
 Installation
 ------------
 
-Add the following line into your gemfile:
+Add the following line to your gemfile:
 
     gem install geocoder
 
