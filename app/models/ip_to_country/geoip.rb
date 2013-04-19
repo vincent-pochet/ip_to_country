@@ -24,7 +24,7 @@ module IpToCountry
     end
 
     def self.ip_to_integer(ip)
-      (o1, o2, o3, o4) = ip.split('.')
+      (o1, o2, o3, o4) = ip.try(:split, '.')
       (16777216 * o1.to_i) + (65536 * o2.to_i) + (256 * o3.to_i) + o4.to_i
     end
 
