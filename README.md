@@ -3,6 +3,28 @@ IpToCountry [![Gem Version](https://badge.fury.io/rb/ip_to_country.png)](http://
 
 Description and documentation comming soon
 
+Installation
+------------
+
+Add the following line into your gemfile:
+
+  gem install geocoder
+
+and run command
+
+  bundle install
+
+Generate migration
+
+  rails generate geoip
+  rake db:migrate
+  rake ip_to_country:populate
+
+Geoip model
+------------
+
+Soon
+
 Development
 -----------
 
