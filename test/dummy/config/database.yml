@@ -1,4 +1,4 @@
 test:
-  adapter: postgres
+  adapter: postgresql
   database: ip_to_country_test
   username: postgres
