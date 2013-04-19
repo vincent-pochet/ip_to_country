@@ -1,0 +1,7 @@
+wonderland:
+  ip_from_string: '192.168.1.1'
+  ip_to_string: '192.168.1.20'
+  ip_from: 3232235777
+  ip_to: 3232235794
+  country_code: 'wd'
+  country_name: 'wonderland'

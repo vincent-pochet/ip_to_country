@@ -10,4 +10,8 @@ class GeoipTest < ActionController::TestCase
     assert_equal(0, IpToCountry::Geoip.ip_to_integer(nil))
   end
 
+  test "by_ip" do
+    assert_equal 'wonderland', IpToCountry::Geoip.by_ip("192.168.1.2").country_name
+  end
+
 end

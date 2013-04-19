@@ -3,12 +3,14 @@
 module IpToCountry
   class Geoip < ActiveRecord::Base
 
+    attr_accessible :ip_from_string, :ip_to_string, :ip_from, :ip_to, :country_code, :country_name
+
     ###################
     ### Validations ###
     ###################
 
-    validates :ip_from_full, presence: true
-    validates :ip_to_full, presence: true
+    validates :ip_from_string, presence: true
+    validates :ip_to_string, presence: true
     validates :ip_from, presence: true, uniqueness: true, numericality: :only_integer
     validates :ip_to, presence: true, uniqueness: true, numericality: :only_integer
     validates :country_code, presence: true
