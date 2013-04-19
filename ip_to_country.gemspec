@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Vincent Pochet"]
   s.email       = ["vincent.pochet@gmail.com"]
   s.homepage    = "https://github.com/vincent-pochet/ip_to_country"
-  s.summary     = "TODO: Summary of IpToCountry."
-  s.description = "TODO: Description of IpToCountry."
+  s.summary     = "Simple tool to find the country of an ip address"
+  s.description = "Simple tool to find the country of an ip address."
 
   s.files = Dir["{app,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
