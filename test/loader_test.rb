@@ -1,6 +1,5 @@
 # -*- encoding : utf-8 -*-
 require 'test_helper'
-require 'ip_to_country/loader'
 
 class LoaderTest < ActiveSupport::TestCase
   
