@@ -44,6 +44,8 @@ In your controller, you can do:
 Development
 -----------
 
+Pull requests and bug reports are welcome!
+
 ### Author
 
 [Vincent Pochet](https://github.com/vincent-pochet) ([@vin100pochet](https://twitter.com/vin100pochet))
