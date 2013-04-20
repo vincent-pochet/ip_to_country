@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Vincent Pochet"]
   s.email       = ["vincent.pochet@gmail.com"]
   s.homepage    = "https://github.com/vincent-pochet/ip_to_country"
-  s.summary     = "Simple tool to find the country of an ip address"
-  s.description = "Simple tool to find the country of an ip address."
+  s.summary     = "Rails extension to get country name or country code from an IP address."
+  s.description = "IpToCountry is a simple rails tool to determine the origin (ISO country code or country name) of an IP address. The gem uses data from GeoLite by MaxMind."
 
   s.files = Dir["{app,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]

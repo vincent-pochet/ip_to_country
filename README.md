@@ -8,7 +8,7 @@ Installation
 
 Add the following line to your gemfile:
 
-    gem install geocoder
+    gem 'geocoder'
 
 and run command
 
@@ -23,7 +23,16 @@ Generate migration
 Geoip model
 ------------
 
-Soon
+
+Request location
+------------
+
+The gem add an extension to Rack::Request to quickly get the country code/name of a request.
+
+In your controller, you can do:
+
+    request.geoip.country_name
+    request.geoip.country_code
 
 Development
 -----------
