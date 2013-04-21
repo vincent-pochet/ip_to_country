@@ -3,7 +3,7 @@ IpToCountry [![Gem Version](https://badge.fury.io/rb/ip_to_country.png)](http://
 
 IpToCountry is a simple rails extension to find the origin (ISO country code or country name) of an IP address.
 
-IpToCountry only supports ruby 1.9.3, rails 3.2+ and only works with a postgresql database. Support for rails 4 and mysql is planned.
+IpToCountry only supports ruby 1.9.3+, rails 3.2+ and only works with a postgresql database. Support mysql is planned.
 
 Installation
 ------------
