@@ -3,8 +3,6 @@
 module IpToCountry
   class Geoip < ActiveRecord::Base
 
-    attr_accessible :ip_from_string, :ip_to_string, :ip_from, :ip_to, :country_code, :country_name
-
     ###################
     ### Validations ###
     ###################

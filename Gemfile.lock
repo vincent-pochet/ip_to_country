@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     ip_to_country (0.0.3)
-      rails (~> 3.2.12)
+      rails (>= 3.2.12, < 5.0)
 
 GEM
   remote: http://rubygems.org/
