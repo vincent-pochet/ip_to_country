@@ -1,4 +1,8 @@
 # -*- encoding : utf-8 -*-
+
+require 'coveralls'
+Coveralls.wear!
+
 # Configure Rails Environment
 ENV["RAILS_ENV"] = "test"
 
@@ -6,9 +10,6 @@ require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require "rails/test_help"
 require "simplecov"
 require "mocha/setup"
-require 'coveralls'
-Coveralls.wear!('rails')
-
 
 Rails.backtrace_cleaner.remove_silencers!
 
