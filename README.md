@@ -10,7 +10,7 @@ Installation
 
 Add the following line to your gemfile:
 
-    gem 'geocoder'
+    gem 'ip_to_country'
 
 and run command
 
