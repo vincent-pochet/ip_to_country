@@ -11,7 +11,7 @@ module IpToCountry
         elsif env.has_key?('HTTP_X_FORWARDED_FOR')
           @geoip = IpToCountry::Geoip.by_ip(env['HTTP_X_FORWARDED_FOR'].split(/\s*,\s*/)[0])
         else
-          @geoip = IpToCountry::Geoip.by_ip(ip)
+          @geoip = IpToCountry::Geoip.by_ip(remote_ip)
         end
       end
       @geoip
