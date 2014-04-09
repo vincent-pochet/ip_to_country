@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ip_to_country (0.1.0)
+    ip_to_country (0.2.0)
       rails (>= 3.2.12, < 5.0)
 
 GEM
